@@ -2,7 +2,7 @@
 from PASS_1 import DIRECTIVES, SYMTAB, OPTAB, ERRCTR, PRGLTH, ADDSTA
 
 INTMDT = open("OUTPUT/IntermediateFile.mdt", "r")
-OBJFILE = open("OUTPUT/ObjectFile.obj", "w+")
+OBJFILE = open("OUTPUT/ObjectFile.txt", "w+")
 LISTFILE = open("OUTPUT/ListingFile.lst", "w+")
 ERRORS = open("OUTPUT/errors_file.txt", "w+")
 LISTARR = [] 

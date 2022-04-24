@@ -14,7 +14,7 @@ ENDFIL   LDA    C'EOF'
          LDL    RETADR
          RSUB
 THREE    WORD   3
-ZERO     WORD   0
+ZERO     WORD   -1
 RETADR   RESW   1
 LENGTH   RESW   1
 BUFFER   RESB   4096

@@ -1,14 +1,3 @@
-# Palestine Polytechnic University
-# College of IT & Computer Engineering
-# System Programming Project: SIC Assembler PASS #1
-#-------------------------------------------------------------------------#
-# Done by:
-#   Name: Suhair Shareef
-#   ID  : 171055
-#       &&
-#   Name: Beesan Atawna
-#   ID  : 171006
-#-------------------------------------------------------------------------#
 
 # Import defined objects and arrays from a file
 from INPUT.DEFININGS import *

@@ -48,7 +48,8 @@ if ERRCTR == 0:
                 elif OPERAND[-2:] == ",X":  
                     if OPERAND[:-2] in SYMTAB.keys(): 
                         hexCode = hex(int(bin(1)[-1:] + "00" + bin(int(SYMTAB[OPERAND[:-2]][0:1]))[2:]))[-1:]
-                        objCode = OPTAB[MNEMONIC[0:]] + hexCode + (SYMTAB[OPERAND[:-2]][1] +SYMTAB[OPERAND[:-2]][2] + SYMTAB[OPERAND[:-2]][3])
+                        objCode = OPTAB[MNEMONIC[0:]] + hexCode + (SYMTAB[OPERAND[:-2]][1] 
+                        +SYMTAB[OPERAND[:-2]][2] + SYMTAB[OPERAND[:-2]][3])
 
                         LISTFILE.write(objCode + "\n")
                         LISTARR.append(objCode)
@@ -94,6 +95,7 @@ while currentListing < len(LISTARR):
 
     currentAddress = ADDARR[currentListing]
     lngth = 0  
+
     if LISTARR[currentListing] != "":
         # Write text record into OBJFILE
         OBJFILE.write("\nT^00" + currentAddress.upper() + "^")

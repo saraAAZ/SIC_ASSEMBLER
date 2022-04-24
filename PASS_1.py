@@ -1,23 +1,8 @@
-
-# Import defined objects and arrays from a file
 from INPUT.DEFININGS import *
-
-# Read source files --> IT HAS TO BE .asm
-# There's multiple source files to test if the program is working correctly
-# Uncomment the source file you want to try
 INPUT = open("INPUT/TESTFILE.asm", "r")
-# INPUT = open("INPUT/Test_File_2.asm", "r")
-# INPUT = open("INPUT/Test_File_3.asm", "r")
-
-# Output file --> intermediate file
 OUTPUT = open("OUTPUT/IntermediateFile.mdt", "w+")
-
-# Log file for errors --> errors file
 ERRORS = open("OUTPUT/errors_file.txt", "w+")
 
-# Saving literal table
-
-# Definings
 SYMTAB = {}
 LOCCTR = 0
 PRGLTH = 0
@@ -26,8 +11,7 @@ ERRCTR = 0
 ADDSTA = 0
 
 print("\n**************SIC ASSEMBLER*****************\n")
-# Reading from file
-# Reading first line
+
 line = INPUT.readline()
 
 if line:

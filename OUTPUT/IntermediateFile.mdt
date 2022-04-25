@@ -14,7 +14,7 @@
 1024               LDL    RETADR
 1027               RSUB
 102a      THREE    WORD   3
-102d      ZERO     WORD   -1
+102d      ZERO     WORD   0
 1030      RETADR   RESW   1
 1033      LENGTH   RESW   1
 1036      BUFFER   RESB   4096
